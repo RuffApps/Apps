@@ -1,0 +1,20 @@
+{
+  "models": [
+    "SOUND-01"
+  ],
+  "inputs": {
+    "gpio": {
+      "type": "gpio",
+      "args": {
+        "direction": "in",
+        "edge": "falling"
+      }
+    }
+  },
+  "args": {
+    "interval": {
+      "type": "number",
+      "default": 1000
+    }
+  }
+}

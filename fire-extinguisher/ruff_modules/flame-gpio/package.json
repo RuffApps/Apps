@@ -1,0 +1,6 @@
+{
+    "name": "flame-gpio",
+    "version": "1.0.2",
+    "description": "GPIO flame sensor driver",
+    "author": "ruff"
+}

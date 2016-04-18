@@ -1,0 +1,4 @@
+{
+    "models": ["HC-SR501"],
+    "inputs": { "gpio": {"type" : "gpio"} }
+}

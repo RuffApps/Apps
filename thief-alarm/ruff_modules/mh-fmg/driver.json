@@ -1,0 +1,11 @@
+{
+    "models": ["MH-FMG"],
+    "inputs": {
+        "gpio": {
+            "type" : "gpio",
+            "args" : {
+                "direction": "out_high"
+            }
+        }
+    }
+}

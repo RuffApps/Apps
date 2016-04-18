@@ -1,0 +1,10 @@
+{
+  "name": "pcf8574",
+  "version": "1.0.2",
+  "description": "Awesome Project",
+  "author": "YangJie",
+  "ruff" : {
+      "dependencies": {
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "models": ["pcf8574"],
+    "inputs": {
+        "i2c": {
+            "type" : "i2c",
+            "args" : {
+                    "address": {
+                        "type": "number",
+                        "default": 39
+                    }
+            }
+        }
+
+    },
+    "outputs" : {
+        "gpio0": {"type": "gpio"},
+        "gpio1": {"type": "gpio"},
+        "gpio2": {"type": "gpio"},
+        "gpio3": {"type": "gpio"},
+        "gpio4": {"type": "gpio"},
+        "gpio5": {"type": "gpio"},
+        "gpio6": {"type": "gpio"},
+        "gpio7": {"type": "gpio"}
+    }
+}

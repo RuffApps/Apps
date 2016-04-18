@@ -1,0 +1,28 @@
+{
+    "board": "ruff-mbd-v1",
+    "devices": [
+        {
+            "id": "infrared-induction",
+            "model": "HC-SR501",
+            "driver": "hc-sr501",
+            "inputs": {
+                "gpio": {
+                    "type": "gpio"
+                }
+            }
+        },
+        {
+            "id": "buzzer",
+            "model": "MH-FMG",
+            "driver": "mh-fmg",
+            "inputs": {
+                "gpio": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out_high"
+                    }
+                }
+            }
+        }
+    ]
+}

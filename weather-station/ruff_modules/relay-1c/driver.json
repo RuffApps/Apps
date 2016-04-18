@@ -1,0 +1,11 @@
+{
+    "models": ["RELAY-1C"],
+    "inputs": {
+        "gpio": {
+            "type": "gpio",
+            "args": {
+                "direction": "out_low"
+            }
+        }
+    }
+}

@@ -1,0 +1,151 @@
+{
+    "board": "ruff-mbd-v1",
+    "devices": [
+        {
+            "id": "flame-sensor",
+            "model": "FLAME-01",
+            "driver": "flame-gpio",
+            "inputs": {
+                "gpio": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "in",
+                        "edge": "both"
+                    }
+                }
+            }
+        },
+        {
+            "id": "relay",
+            "model": "RELAY-1C",
+            "driver": "relay-1c",
+            "inputs": {
+                "gpio": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out_low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "lcd",
+            "model": "lcd1602-pcf8574a-hd44780",
+            "driver": "lcd1602-pcf8574a-hd44780",
+            "export": "lcd:hd44780",
+            "inputs": {
+                "i2c": "lcd:pcf8574/i2c",
+                "vcc": "lcd:pcf8574/vdd",
+                "gnd": "lcd:pcf8574/gnd"
+            },
+            "devices": [
+                {
+                    "id": "lcd:pcf8574",
+                    "model": "pcf8574",
+                    "driver": "pcf8574",
+                    "power": {
+                        "name": "vdd",
+                        "voltage": "5v"
+                    },
+                    "outputs": {
+                        "gpio0": {
+                            "type": "gpio"
+                        },
+                        "gpio1": {
+                            "type": "gpio"
+                        },
+                        "gpio2": {
+                            "type": "gpio"
+                        },
+                        "gpio3": {
+                            "type": "gpio"
+                        },
+                        "gpio4": {
+                            "type": "gpio"
+                        },
+                        "gpio5": {
+                            "type": "gpio"
+                        },
+                        "gpio6": {
+                            "type": "gpio"
+                        },
+                        "gpio7": {
+                            "type": "gpio"
+                        }
+                    },
+                    "inputs": {
+                        "i2c": {
+                            "type": "i2c",
+                            "args": {
+                                "address": 63
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "lcd:hd44780",
+                    "model": "LCD1602",
+                    "driver": "hd44780",
+                    "inputs": {
+                        "rs": {
+                            "type": "gpio",
+                            "args": {
+                                "direction": "out"
+                            },
+                            "bind": "lcd:pcf8574/gpio0"
+                        },
+                        "rw": {
+                            "type": "gpio",
+                            "args": {
+                                "direction": "out"
+                            },
+                            "bind": "lcd:pcf8574/gpio1"
+                        },
+                        "cs": {
+                            "type": "gpio",
+                            "args": {
+                                "direction": "out"
+                            },
+                            "bind": "lcd:pcf8574/gpio2"
+                        },
+                        "p3": {
+                            "type": "gpio",
+                            "args": {
+                                "direction": "out"
+                            },
+                            "bind": "lcd:pcf8574/gpio3"
+                        },
+                        "d4": {
+                            "type": "gpio",
+                            "args": {
+                                "direction": "out"
+                            },
+                            "bind": "lcd:pcf8574/gpio4"
+                        },
+                        "d5": {
+                            "type": "gpio",
+                            "args": {
+                                "direction": "out"
+                            },
+                            "bind": "lcd:pcf8574/gpio5"
+                        },
+                        "d6": {
+                            "type": "gpio",
+                            "args": {
+                                "direction": "out"
+                            },
+                            "bind": "lcd:pcf8574/gpio6"
+                        },
+                        "d7": {
+                            "type": "gpio",
+                            "args": {
+                                "direction": "out"
+                            },
+                            "bind": "lcd:pcf8574/gpio7"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

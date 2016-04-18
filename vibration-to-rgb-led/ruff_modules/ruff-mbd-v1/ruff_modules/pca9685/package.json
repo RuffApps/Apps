@@ -1,0 +1,10 @@
+{
+    "name": "pca9685",
+    "version": "1.0.2",
+    "description": "",
+    "author": "jie.yang@nanchao.org",
+    "ruff": {
+        "dependencies": {},
+        "devDependencies": {}
+    }
+}

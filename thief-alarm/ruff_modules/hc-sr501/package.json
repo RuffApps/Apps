@@ -1,0 +1,10 @@
+{
+  "name": "hc-sr501",
+  "version": "1.0.1",
+  "description": "Awesome Project",
+  "author": "yangjie",
+  "ruff":  {
+      "dependencies": {
+          }
+  }
+}

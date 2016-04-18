@@ -1,0 +1,12 @@
+{
+    "mapping": {
+        "hd44780/rs": "pcf8574/gpio0",
+        "hd44780/rw": "pcf8574/gpio1",
+        "hd44780/cs": "pcf8574/gpio2",
+        "hd44780/p3": "pcf8574/gpio3",
+        "hd44780/d4": "pcf8574/gpio4",
+        "hd44780/d5": "pcf8574/gpio5",
+        "hd44780/d6": "pcf8574/gpio6",
+        "hd44780/d7": "pcf8574/gpio7"
+    }
+}

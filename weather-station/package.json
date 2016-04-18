@@ -1,0 +1,14 @@
+{
+    "name": "weather-station",
+    "version": "0.1.0",
+    "description": "a weather station leverage humidity and temperature sensor",
+    "author": "ccccly",
+    "ruff": {
+        "dependencies": {
+            "ruff-mbd-v1": "^2.0.0",
+            "dht11": "^0.1.3",
+            "lcd1602-pcf8574a-hd44780": "^0.1.5",
+            "relay-1c": "^1.0.0"
+        }
+    }
+}

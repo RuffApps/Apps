@@ -1,0 +1,13 @@
+{
+    "name": "actinic-light",
+    "version": "0.1.0",
+    "description": "the light will perform diffrent color according to the light intensity",
+    "author": "ccccly",
+    "ruff": {
+        "dependencies": {
+            "ruff-mbd-v1": "^2.0.0",
+            "ky-016": "^1.0.5",
+            "gy-30": "^1.0.2"
+        }
+    }
+}

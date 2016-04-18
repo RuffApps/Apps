@@ -1,0 +1,6 @@
+{
+  "name": "button-gpio",
+  "version": "1.0.0",
+  "description": "Common button driver",
+  "author": "ruff"
+}

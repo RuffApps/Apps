@@ -1,0 +1,14 @@
+{
+    "models": [
+        "CK002"
+    ],
+    "inputs": {
+        "gpio": {
+            "type": "gpio",
+            "args": {
+                "direction": "in",
+                "edge": "both"
+            }
+        }
+    }
+}
