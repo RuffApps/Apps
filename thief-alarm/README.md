@@ -2,15 +2,13 @@
 
 ##介绍
 
-当你不
+当你离开家的时候，你可以打开这套系统，如果红外传感器检测到有人体信号，蜂鸣器发出声音警报
 
 ##硬件要求
 
-1.[LCD Display Module(Model:lcd1602-pcf8574-hd44780)](https://rap.ruff.io/raps/58)
+1.[Infrared Induction Module(Model:hc-sr501)](https://rap.ruff.io/raps/58)
 
-2.[Temperature Humidity Sensor(Model:DHT11)](https://rap.ruff.io/devices/DHT11)
-
-3.[Relay Module(Model:RELAY-1C)](https://rap.ruff.io/devices/RELAY-1C)*2
+2.[Buzzer(Model:MH-FMG)](https://rap.ruff.io/devices/DHT11)
 
 3.Ruff开发板
 
@@ -102,43 +100,34 @@ Ruff 开发包主要提供了如下命令：
 
 ###第四步：添加外设
 
-添加LCD ，运行如下命令：
+添加红外传感器 ，运行如下命令：
 
-    rap add device LCD
+    rap add device infrared-induction
 
-这里的 LCD 就是我们在应用中用以操作设备的 ID，该命令会提示我们输入设备型号。根据标签上的信息，
-LED模块的型号是 lcd1602-pcf8574-hd44780。然后，rap 会根据外设型号，去寻找相应的驱动。
+这里的 infrared-induction 就是我们在应用中用以操作设备的 ID，该命令会提示我们输入设备型号。根据标签上的信息，
+infrared-induction模块的型号是hc-sr501 。然后，rap 会根据外设型号，去寻找相应的驱动。
 
-    ? model: (lcd) lcd1602-pcf8574-hd44780
-    ? model: lcd1602-pcf8574-hd44780
+    ? model: hc-sr501
     Searching supported drivers from Rap registry...
-    ? select a driver for device "lcd"(lcd1602-pcf8574-hd44780): lcd1602-pcf8574-hd44780@0.1.1
+    ? select a driver for device "infrared-induction"(HC-SR501): hc-sr501@1.0.4
     Installing driver...
-    Downloading package "lcd1602-pcf8574-hd44780"...
-    Extracting package "lcd1602-pcf8574-hd44780" (0.1.1)...
-    Downloading package "hd44780"...
-    Extracting package "hd44780" (0.1.2)...
-    Downloading package "pcf8574"...
-    Extracting package "pcf8574" (1.0.2)...
-    - lcd1602-pcf8574-hd44780@0.1.1
-    - hd44780@0.1.2
-    - pcf8574@1.0.2
-    Adding device "lcd" to application configuration...
+    Downloading package "hc-sr501"...
+    Extracting package "hc-sr501" (1.0.4)...
+    - hc-sr501@1.0.4
+    Adding device "infrared-induction" to application configuration...
+    Adding input "infrared-induction/vcc" (power) to application configuration...
+    Adding input "infrared-induction/gnd" (ground) to application configuration...
+    Adding input "infrared-induction/gpio" (gpio) to application configuration...
     Done.
 
 我们需要选择自己用到的驱动，如果有多个可以选项，请用上下箭头键进行选择，回车后，确认选择。之后，rap 会帮我们安装对应的驱动。
 
-这里，我们选择了 lcd1602-pcf8574-hd44780@0.1.1，可以到[软件包仓库](https://rap.ruff.io/)搜索 lcd1602-pcf8574-hd44780@0.1.1，
+这里，我们选择了 hc-sr501@1.0.4，可以到[软件包仓库](https://rap.ruff.io/)搜索 hc-sr501@1.0.4，
 查看这个驱动如何在程序中使用。
 
-如上，继续添加Temperature Humidity Sensor，这里我们使用dht作为它的ID
+如上，继续添加蜂鸣器
 
-    rap device add dht
-
-添加控制空调的继电器
-    rap device add temprature-relay
-添加控制加湿器的继电器
-    rap device add humidity-relay
+    rap device add buzzer
 
 ###第五步：硬件布局
 
