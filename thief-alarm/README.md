@@ -6,7 +6,7 @@
 
 ##硬件要求
 
-1.[Infrared Induction Module(Model:hc-sr501)](https://rap.ruff.io/raps/58)
+1.[Infrared Induction Module(Model:hc-sr501)](https://rap.ruff.io/devices/HC-SR501)
 
 2.[Buzzer(Model:MH-FMG)](https://rap.ruff.io/devices/DHT11)
 
