@@ -1,0 +1,32 @@
+{
+    "models": ["cherokey"],
+    "inputs": {
+        "gpio-m1": {
+            "type": "gpio",
+            "args": {
+                "direction": "out",
+                "edge": "both"
+            }
+        },
+        "gpio-m2": {
+            "type": "gpio",
+            "args": {
+                "direction": "out",
+                "edge": "both"
+            }
+        },
+        "pwm-m1": {
+            "type": "pwm",
+            "args": {
+                "frequency": 318
+            }
+        },
+        "pwm-m2": {
+            "type": "pwm",
+            "args": {
+                "frequency": 318
+            }
+        }
+
+    }
+}

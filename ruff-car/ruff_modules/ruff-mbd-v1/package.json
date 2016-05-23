@@ -1,0 +1,15 @@
+{
+	"name": "ruff-mbd-v1",
+	"version": "2.0.4",
+	"description": "ruff main board",
+	"author": "Ruff",
+	"ruff": {
+		"dependencies": {
+			"led-gpio": "^1.0.0",
+			"button-gpio": "^1.0.0",
+			"pca9685": "^1.0.2",
+			"ltc2309": "^1.0.3",
+			"mcp23017": "^1.0.7"
+		}
+	}
+}

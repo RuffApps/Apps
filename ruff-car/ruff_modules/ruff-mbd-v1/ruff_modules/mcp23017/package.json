@@ -1,0 +1,6 @@
+{
+	"name": "mcp23017",
+	"version": "1.0.9",
+	"description": "mcp23017 driver",
+	"author": "ruff"
+}

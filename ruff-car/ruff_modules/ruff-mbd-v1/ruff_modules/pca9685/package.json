@@ -1,0 +1,10 @@
+{
+	"name": "pca9685",
+	"version": "1.0.6",
+	"description": "",
+	"author": "ruff",
+	"ruff": {
+		"dependencies": {},
+		"devDependencies": {}
+	}
+}
