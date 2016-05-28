@@ -102,7 +102,7 @@ Ruff 开发包主要提供了如下命令：
 
 添加声音传感器，运行如下命令：
 
-    rap add device sound_sensor
+    rap device add sound_sensor
 
 这里的 LED 就是我们在应用中用以操作设备的 ID，该命令会提示我们输入设备型号。根据标签上的信息，
 LED模块的型号是 KY-016。然后，rap 会根据外设型号，去寻找相应的驱动。
