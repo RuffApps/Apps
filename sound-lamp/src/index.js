@@ -12,9 +12,9 @@ $.ready(function (error) {
     }
 
     relay = $('#relay');
-    soundSensor = $('#sound-sensor');
+    soundSensor = $('#sound');
 
-    soundSensor.on('recieve', function () {
+    soundSensor.on('receive', function () {
         //继电器打开，控制相应的灯泡打开
         relay.turnOn();
 
