@@ -1,0 +1,18 @@
+{
+    "models": [
+        "led-gpio"
+    ],
+    "inputs": {
+        "gpio": {
+            "type" : "gpio",
+            "args" : {
+                "direction": "out",
+                "level": "low",
+                "activeLow": {
+                    "type": "boolean",
+                    "default": false
+                }
+            }
+        }
+    }
+}

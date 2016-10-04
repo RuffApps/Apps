@@ -1,0 +1,17 @@
+{
+    "name": "sound-lamp",
+    "version": "0.1.0",
+    "description": "a lamp controlled by sound",
+    "author": "ccccly",
+    "main": "src/index.js",
+    "ruff": {
+        "boards": {
+            "ruff-mbd-v1": "^4.1.2",
+            "*": "*"
+        },
+        "dependencies": {
+            "ky-016": "^2.0.3",
+            "sound-01": "^1.1.3"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "vibration-to-rgb-led",
+    "version": "0.1.0",
+    "description": "this project will transform vibration into rgb led light",
+    "author": "ccccly",
+    "main": "src/index.js",
+    "ruff": {
+        "boards": {
+            "ruff-mbd-v1": "^4.1.2",
+            "*": "*"
+        },
+        "dependencies": {
+            "ky-016": "^2.0.3",
+            "sw-1801p": "^1.0.2"
+        }
+    }
+}

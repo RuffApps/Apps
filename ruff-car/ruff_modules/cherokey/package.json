@@ -1,0 +1,7 @@
+{
+    "name": "cherokey",
+    "version": "0.1.4",
+    "description": "a driver for cherokey 4wd",
+    "author": "ccccly",
+    "main": "src/index.js"
+}

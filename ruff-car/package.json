@@ -1,0 +1,19 @@
+{
+    "name": "ruff-car",
+    "version": "0.1.0",
+    "description": "a car example on ruff",
+    "author": "ccccly",
+    "main": "src/index.js",
+    "ruff": {
+        "boards": {
+            "ruff-mbd-v1": "^4.1.2",
+            "*": "*"
+        },
+        "dependencies": {
+            "cherokey": "^0.1.4",
+            "home": "^0.1.6",
+            "hc-sr501": "^2.0.3"
+        },
+        "devDependencies": {}
+    }
+}

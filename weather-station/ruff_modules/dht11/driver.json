@@ -1,0 +1,11 @@
+{
+    "models": [
+        "DHT11"
+    ],
+    "inputs": {
+        "gpio": {
+            "type": "gpio",
+            "reserve": "gpio-18/gpio"
+        }
+    }
+}

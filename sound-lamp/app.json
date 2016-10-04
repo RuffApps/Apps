@@ -1,0 +1,47 @@
+{
+    "devices": [
+        {
+            "id": "led",
+            "model": "KY-016",
+            "driver": "ky-016",
+            "inputs": {
+                "pwm-r": {
+                    "type": "pwm",
+                    "args": {
+                        "frequency": 800
+                    }
+                },
+                "pwm-g": {
+                    "type": "pwm",
+                    "args": {
+                        "frequency": 800
+                    }
+                },
+                "pwm-b": {
+                    "type": "pwm",
+                    "args": {
+                        "frequency": 800
+                    }
+                }
+            }
+        },
+        {
+            "id": "sound",
+            "model": "SOUND-01",
+            "driver": "sound-01",
+            "args": {
+                "interval": 1000,
+                "enabled": true
+            },
+            "inputs": {
+                "gpio": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "in",
+                        "edge": "none"
+                    }
+                }
+            }
+        }
+    ]
+}

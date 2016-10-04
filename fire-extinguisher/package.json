@@ -1,0 +1,18 @@
+{
+    "name": "fire-extinguisher",
+    "version": "0.1.0",
+    "description": "when flame sensor detect a flame signal, the relay should turn on the fire extinguisher to put out the fire",
+    "author": "ccccly",
+    "main": "src/index.js",
+    "ruff": {
+        "boards": {
+            "ruff-mbd-v1": "^4.1.2",
+            "*": "*"
+        },
+        "dependencies": {
+            "lcd1602-pcf8574a-hd44780": "^0.2.5",
+            "flame-gpio": "^1.0.3",
+            "relay-1c": "^2.0.3"
+        }
+    }
+}

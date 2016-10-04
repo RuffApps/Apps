@@ -1,0 +1,57 @@
+{
+    "devices": [
+        {
+            "id": "car",
+            "model": "cherokey",
+            "driver": "cherokey",
+            "inputs": {
+                "gpio-m1": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out",
+                        "edge": "both",
+                        "level": "high"
+                    }
+                },
+                "gpio-m2": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out",
+                        "edge": "both",
+                        "level": "high"
+                    }
+                },
+                "pwm-m1": {
+                    "type": "pwm",
+                    "args": {
+                        "frequency": 318
+                    }
+                },
+                "pwm-m2": {
+                    "type": "pwm",
+                    "args": {
+                        "frequency": 318
+                    }
+                }
+            }
+        },
+        {
+            "id": "infrared-induction",
+            "model": "HC-SR501",
+            "driver": "hc-sr501",
+            "power": {
+                "name": "vcc",
+                "voltage": "5v"
+            },
+            "inputs": {
+                "gpio": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "in",
+                        "edge": "both"
+                    }
+                }
+            }
+        }
+    ]
+}

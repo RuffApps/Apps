@@ -1,0 +1,17 @@
+{
+    "name": "thief-alarm",
+    "version": "0.1.0",
+    "description": "a thief alarm system",
+    "author": "ccccly",
+    "main": "src/index.js",
+    "ruff": {
+        "boards": {
+            "ruff-mbd-v1": "^4.1.2",
+            "*": "*"
+        },
+        "dependencies": {
+            "hc-sr501": "^2.0.3",
+            "buzzer-gpio": "^0.2.3"
+        }
+    }
+}

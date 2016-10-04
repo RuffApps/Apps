@@ -1,0 +1,19 @@
+{
+    "name": "access-control",
+    "version": "0.1.0",
+    "description": "a access control demo for ruff",
+    "author": "ccccly",
+    "main": "src/index.js",
+    "ruff": {
+        "boards": {
+            "ruff-mbd-v1": "^4.1.2",
+            "*": "*"
+        },
+        "dependencies": {
+            "button-gpio": "^2.0.4",
+            "hc-sr501": "^2.0.3",
+            "relay-1c": "^2.0.3",
+            "lcd1602-pcf8574a-hd44780": "^0.2.5"
+        }
+    }
+}

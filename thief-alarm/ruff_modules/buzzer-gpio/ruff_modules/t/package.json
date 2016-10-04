@@ -1,0 +1,23 @@
+{
+    "name": "t",
+    "version": "0.1.7",
+    "description": "Testing Framework for Ruff.",
+    "author": "vilicvane",
+    "license": "MIT",
+    "main": "bld/index.js",
+    "typings": "bld/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "incremental-build": "tsc -w"
+    },
+    "devDependencies": {
+        "source-map-support": "latest",
+        "typescript": "latest"
+    },
+    "ruff": {
+        "dependencies": {
+            "promise": "^0.1.2"
+        },
+        "devDependencies": {}
+    }
+}

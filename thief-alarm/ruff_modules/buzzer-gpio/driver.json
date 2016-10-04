@@ -1,0 +1,15 @@
+{
+    "models": [
+        "MH-FMG",
+        "FC-49"
+    ],
+    "inputs": {
+        "gpio": {
+            "type": "gpio",
+            "args": {
+                "direction": "out",
+                "level": "low"
+            }
+        }
+    }
+}

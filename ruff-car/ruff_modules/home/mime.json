@@ -1,0 +1,12 @@
+{
+    ".txt": "text/plain",
+    ".text": "text/plain",
+    ".htm": "text/html",
+    ".html": "text/html",
+    ".png": "image/png",
+    ".jpg": "image/jpeg",
+    ".jpeg": "image/jpeg",
+    ".gif": "image/gif",
+    ".js": "text/javascript",
+    ".css": "text/css"
+}

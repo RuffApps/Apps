@@ -1,0 +1,111 @@
+{
+    "models": [
+        "lcd1602-02"
+    ],
+    "export": "hd44780",
+    "inputs": {
+        "i2c": "pcf8574/i2c",
+        "vcc": "pcf8574/vdd",
+        "gnd": "pcf8574/gnd"
+    },
+    "devices": [
+        {
+            "id": "pcf8574",
+            "model": "pcf8574",
+            "driver": "pcf8574",
+            "power": {
+                "name": "vdd",
+                "voltage": "5v"
+            },
+            "outputs": {
+                "gpio-0": {
+                    "type": "gpio"
+                },
+                "gpio-1": {
+                    "type": "gpio"
+                },
+                "gpio-2": {
+                    "type": "gpio"
+                },
+                "gpio-3": {
+                    "type": "gpio"
+                },
+                "gpio-4": {
+                    "type": "gpio"
+                },
+                "gpio-5": {
+                    "type": "gpio"
+                },
+                "gpio-6": {
+                    "type": "gpio"
+                },
+                "gpio-7": {
+                    "type": "gpio"
+                }
+            },
+            "inputs": {
+                "i2c": {
+                    "type": "i2c",
+                    "args": {
+                        "address": 63
+                    }
+                }
+            }
+        },
+        {
+            "id": "hd44780",
+            "model": "LCD1602",
+            "driver": "hd44780",
+            "inputs": {
+                "rs": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out"
+                    }
+                },
+                "rw": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out"
+                    }
+                },
+                "e": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out"
+                    }
+                },
+                "p3": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out"
+                    }
+                },
+                "d4": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out"
+                    }
+                },
+                "d5": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out"
+                    }
+                },
+                "d6": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out"
+                    }
+                },
+                "d7": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out"
+                    }
+                }
+            }
+        }
+    ]
+}

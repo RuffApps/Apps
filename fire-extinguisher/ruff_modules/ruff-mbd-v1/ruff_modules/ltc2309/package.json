@@ -1,0 +1,41 @@
+{
+	"name": "ltc2309",
+	"version": "2.0.3",
+	"description": "LTC2309 I2C-ADC Driver for Ruff.",
+	"author": "Nanchao Inc.",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ruff-drivers/ltc2309.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ruff-drivers/ltc2309/issues"
+	},
+	"homepage": "https://github.com/ruff-drivers/ltc2309",
+	"keywords": [
+		"ruff",
+		"driver"
+	],
+	"main": "src/index.js",
+	"device-typings": "typings/device.d.ts",
+	"engines": {
+		"ruff": ">=1.2.0 <1.6.0"
+	},
+	"scripts": {
+		"install-sdk": "rvm install --local",
+		"install-rap-dependencies": "rap install",
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "ruff ./test/test.js"
+	},
+	"devDependencies": {
+		"eslint": "^2.11.1",
+		"ruff-standard": "^0.1.4",
+		"rvm": "^0.3.2"
+	},
+	"ruff": {
+		"devDependencies": {
+			"t": "^0.1.6"
+		}
+	}
+}

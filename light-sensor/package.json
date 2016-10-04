@@ -1,0 +1,17 @@
+{
+    "name": "light-sensor",
+    "version": "0.1.0",
+    "description": "demo for light sensor.The LCD display will show the value the lignt intensity",
+    "author": "ccccly",
+    "main": "src/index.js",
+    "ruff": {
+        "boards": {
+            "ruff-mbd-v1": "^4.1.2",
+            "*": "*"
+        },
+        "dependencies": {
+            "lcd1602-pcf8574a-hd44780": "^0.2.5",
+            "gy-30": "^3.0.3"
+        }
+    }
+}

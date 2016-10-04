@@ -1,0 +1,24 @@
+{
+  "name": "promise",
+  "version": "0.1.2",
+  "description": "ES6 Promise based on ThenFail 0.4",
+  "author": "vilicvane",
+  "license": "MIT",
+  "main": "bld/index.js",
+  "typings": "bld/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "incremental-build": "tsc -w",
+    "aplus": "promises-aplus-tests test/aplus/adapter.js",
+    "test": "mocha && npm run aplus",
+    "quick-test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "latest",
+    "chai-as-promised": "latest",
+    "mocha": "latest",
+    "promises-aplus-tests": "latest",
+    "source-map-support": "latest",
+    "typescript": "latest"
+  }
+}

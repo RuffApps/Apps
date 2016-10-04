@@ -1,0 +1,25 @@
+{
+    "models": [
+        "KY-016"
+    ],
+    "inputs": {
+        "pwm-r": {
+            "type": "pwm",
+            "args": {
+                "frequency": 800
+            }
+        },
+        "pwm-g": {
+            "type": "pwm",
+            "args": {
+                "frequency": 800
+            }
+        },
+        "pwm-b": {
+            "type": "pwm",
+            "args": {
+                "frequency": 800
+            }
+        }
+    }
+}

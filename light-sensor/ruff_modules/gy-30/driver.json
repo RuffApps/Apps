@@ -1,0 +1,19 @@
+{
+    "models": [
+        "GY-30"
+    ],
+    "args": {
+        "highResolution": {
+            "type": "boolean",
+            "default": true
+        }
+    },
+    "inputs": {
+        "i2c": {
+            "type": "i2c",
+            "args": {
+                "address": 35
+            }
+        }
+    }
+}

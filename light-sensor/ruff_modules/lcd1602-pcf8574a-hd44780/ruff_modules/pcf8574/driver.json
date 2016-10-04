@@ -1,0 +1,40 @@
+{
+    "models": [],
+    "inputs": {
+        "i2c": {
+            "type": "i2c",
+            "args": {
+                "address": {
+                    "type": "number",
+                    "default": 39
+                }
+            }
+        }
+    },
+    "outputs": {
+        "gpio-0": {
+            "type": "gpio"
+        },
+        "gpio-1": {
+            "type": "gpio"
+        },
+        "gpio-2": {
+            "type": "gpio"
+        },
+        "gpio-3": {
+            "type": "gpio"
+        },
+        "gpio-4": {
+            "type": "gpio"
+        },
+        "gpio-5": {
+            "type": "gpio"
+        },
+        "gpio-6": {
+            "type": "gpio"
+        },
+        "gpio-7": {
+            "type": "gpio"
+        }
+    }
+}

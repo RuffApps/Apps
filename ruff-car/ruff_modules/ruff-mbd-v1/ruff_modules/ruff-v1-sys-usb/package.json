@@ -1,0 +1,45 @@
+{
+  "name": "ruff-v1-sys-usb",
+  "version": "0.1.2",
+  "description": "Sys-usb managers the `mount` and `unmount` behaviour of USB devices.",
+  "author": "Nanchao Inc.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruff-drivers/ruff-v1-sys-usb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ruff-drivers/ruff-v1-sys-usb/issues"
+  },
+  "homepage": "https://github.com/ruff-drivers/ruff-v1-sys-usb",
+  "keywords": [
+    "ruff",
+    "driver",
+    "usb"
+  ],
+  "main": "src/index.js",
+  "engines": {
+    "ruff": ">=1.4.0 <1.6.0"
+  },
+  "boards": {
+    "ruff-mbd-v1": "^4.1.0"
+  },
+  "scripts": {
+    "install-sdk": "rvm install --local",
+    "install-rap-dependencies": "rap install",
+    "lint": "eslint *.js",
+    "pretest": "npm run lint",
+    "test": "ruff test/test.js"
+  },
+  "devDependencies": {
+    "eslint": "^2.11.1",
+    "ruff-standard": "^0.1.4",
+    "rvm": "^0.3.2"
+  },
+  "ruff": {
+    "devDependencies": {
+      "t": "^0.1.6"
+    }
+  }
+}
+

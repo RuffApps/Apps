@@ -1,0 +1,53 @@
+{
+    "models": [],
+    "inputs": {
+        "rs": {
+            "type": "gpio",
+            "args": {
+                "direction": "out"
+            }
+        },
+        "rw": {
+            "type": "gpio",
+            "args": {
+                "direction": "out"
+            }
+        },
+        "e": {
+            "type": "gpio",
+            "args": {
+                "direction": "out"
+            }
+        },
+        "p3": {
+            "type": "gpio",
+            "args": {
+                "direction": "out"
+            }
+        },
+        "d4": {
+            "type": "gpio",
+            "args": {
+                "direction": "out"
+            }
+        },
+        "d5": {
+            "type": "gpio",
+            "args": {
+                "direction": "out"
+            }
+        },
+        "d6": {
+            "type": "gpio",
+            "args": {
+                "direction": "out"
+            }
+        },
+        "d7": {
+            "type": "gpio",
+            "args": {
+                "direction": "out"
+            }
+        }
+    }
+}

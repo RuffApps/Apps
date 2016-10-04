@@ -1,0 +1,18 @@
+{
+    "models": [
+        "HC-SR501"
+    ],
+    "power": {
+        "name": "vcc",
+        "voltage": "5v"
+    },
+    "inputs": {
+        "gpio": {
+            "type": "gpio",
+            "args": {
+                "direction": "in",
+                "edge": "both"
+            }
+        }
+    }
+}

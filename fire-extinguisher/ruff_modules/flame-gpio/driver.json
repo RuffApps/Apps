@@ -1,0 +1,12 @@
+{
+    "models": ["FLAME-01"],
+    "inputs": {
+        "gpio": {
+            "type": "gpio",
+            "args": {
+                "direction": "in",
+                "edge": "both"
+            }
+        }
+    }
+}

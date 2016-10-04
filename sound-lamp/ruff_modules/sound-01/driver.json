@@ -1,0 +1,24 @@
+{
+    "models": [
+        "SOUND-01"
+    ],
+    "inputs": {
+        "gpio": {
+            "type": "gpio",
+            "args": {
+                "direction": "in",
+                "edge": "none"
+            }
+        }
+    },
+    "args": {
+        "interval": {
+            "type": "number",
+            "default": 1000
+        },
+        "enabled": {
+            "type": "boolean",
+            "default": true
+        }
+    }
+}

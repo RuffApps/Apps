@@ -1,0 +1,36 @@
+{
+    "devices": [
+        {
+            "id": "infrared-induction",
+            "model": "HC-SR501",
+            "driver": "hc-sr501",
+            "power": {
+                "name": "vcc",
+                "voltage": "5v"
+            },
+            "inputs": {
+                "gpio": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "in",
+                        "edge": "both"
+                    }
+                }
+            }
+        },
+        {
+            "id": "buzzer",
+            "model": "FC-49",
+            "driver": "buzzer-gpio",
+            "inputs": {
+                "gpio": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out",
+                        "level": "low"
+                    }
+                }
+            }
+        }
+    ]
+}

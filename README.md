@@ -7,14 +7,6 @@ Stunning applications on Ruff
    
     这是一个使用红外传感器、LCD、大按键以及继电器实现的门禁应用
     
-+ actinic light
-    
-    这是一个根据环境亮度来以不同的频率更新led灯RGB值得应用
-    
-+ colorful light
-    
-    这个应用能让LED灯五光十色
-
 + fire extinguisher
 
     这是一个火灾监测及防护应用。当火焰传感器检测到火焰信号时，保安室的LCD显示屏提示有火灾，同时控制灭火器的继电器打开，开始灭火
@@ -23,10 +15,6 @@ Stunning applications on Ruff
     
     通过LCD显示光照传感器获取的光照强度值
     
-+ sos
-    
-    这是一款SOS报警器应用，SOS信号用摩斯电码编码，你只要按下红色按钮开关，LED灯就会发出SOS的求救信号
-
 + sound lamp
     
     这是一款声控灯应用
@@ -46,4 +34,4 @@ Stunning applications on Ruff
     这个案例利用温湿度传感器从环境中换取温度和湿度数据，如果温度和湿度不在人体舒适的范围内，
     则通过相应的继电器控制空调或加湿器的开关，从而达到控制环境温湿度的目的。
 
-怎么样，有趣吗？想了解更多 Ruff 开发的细节，请到[这里](https://ruff.io/zh-cn/docs/development-steps.html)。
+怎么样，有趣吗？想了解更多 Ruff 开发的细节，请到[这里](https://ruff.io/zh-cn/docs/getting-started.html)。

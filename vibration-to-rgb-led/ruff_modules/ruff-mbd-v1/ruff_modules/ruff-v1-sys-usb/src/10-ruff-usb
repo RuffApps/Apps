@@ -1,0 +1,15 @@
+#! /bin/sh
+notify () {
+    echo $msg | socat - udp-sendto:127.0.0.1:9999
+}
+
+case "$ACTION" in
+    "add")
+        msg="{\"action\":\"mount\",\"devPath\":\"/sys$DEVPATH\"}"
+        notify $msg
+        ;;
+    "remove")
+        msg="{\"action\":\"unmount\",\"devPath\":\"/sys$DEVPATH\"}"
+        notify $msg
+        ;;
+esac
